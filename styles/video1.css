@@ -71,3 +71,77 @@
     row-gap: 40px;
 }
 
+
+/* Container for video thumbnails and titles */
+.thumbnail-row {
+    margin-bottom: 12px;
+}
+
+/* Ensure thumbnail images cover the container */
+.thumbnail {
+    width: 100%;
+    height: auto;
+}
+
+/* Styling for video titles */
+.video-title {
+    margin: 0; /* Remove default margins */
+    font-size: 14px; /* Adjust font size as needed */
+    font-weight: 500; /* Medium weight for readability */
+    line-height: 20px; /* Ensure proper line height for readability */
+    margin-bottom: 5px; /* Space below title */
+    text-align: left; /* Align text to the left (or change as needed) */
+    width: 100%; /* Title should fill the container width */
+    overflow-wrap: break-word; /* Break long words to avoid overflow */
+    white-space: normal; /* Allow text to wrap onto multiple lines */
+}
+
+/* Grid layout for video info */
+.video-info-grid {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Adjust to fit channel picture and text */
+    gap: 8px;
+    align-items: center; /* Align items vertically */
+}
+
+/* Styling for channel picture */
+.channel-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Make the image circular */
+    overflow: hidden; /* Hide overflow to keep the circular shape */
+}
+
+/* Styling for video info section */
+.video-info {
+    /* Ensuring the width adjusts to fit text */
+    width: 100%; /* Let it take up full width of the grid column */
+}
+
+/* Profile picture style */
+.profile-picture {
+    width: 100%;
+    border-radius: 50%; /* Circular profile picture */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Styling for video author and stats */
+.video-author,
+.video-stats {
+    font-size: 14px; /* Adjust font size for readability */
+    font-weight: 0;
+    color: #606060; /* Gray color for text */
+}
+
+.video-author {
+    margin-bottom: 4px; /* Space below author name */
+}
+
+/* Grid layout for video thumbnails */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    column-gap: 16px;
+    row-gap: 40px;
+}
+

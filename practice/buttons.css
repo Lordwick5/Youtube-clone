@@ -1,0 +1,61 @@
+
+	.subscribe-button { /*.___ button targets only the class name*/
+		background-color: rgb(200, 0, 0); /*--red, green, blue-->*/
+		color: white;
+		border: none;
+		padding-left: 30px;
+		padding-top: 10px;
+		border-radius: 2px;
+		cursor: pointer;
+		margin-right: 8px; /*let's us add spaces between buttons*/
+		transition: opacity 0.25s; /*is used to transition the effect of hover slowly*/
+	}
+
+	.subscribe-button:hover { /*to add transitions when hovered over a button*/
+		opacity: 0.7;
+	}
+
+	.subscribe-button:active {
+		opacity: 0.5;
+	}
+
+	.join-button {
+		background-color: white;
+		border-color: rgb(41, 118, 211);
+		border-style: solid;
+		border-width: 1px;
+		padding-left: 30px; /*padding will resize the button to whatever text we add*/
+		padding-top: 20px;
+		color: rgb(41, 118, 211);
+		border-radius: 2px;
+		cursor: pointer;
+		transition: background-color 0.25s, color 1s;
+	}
+
+	.join-button:hover {
+		background-color: rgb(41, 118, 211);
+		color: white;
+	}
+
+	.join-button:active {
+		opacity: 0.7;
+	}
+
+	.tweet-button {
+		background-color: rgb(22, 118, 214);
+		border-radius: 17px; /*the border radius should be half of what the height is to be perfect oval shape*/
+		border: none;
+		color: white;
+		height: 35px;
+		width: 75px;
+		font-weight: bold;
+		font-size: 15px;
+		cursor: pointer;
+		margin-left: 8px;
+		transition: box-shadow 0.25s;
+	}
+
+	.tweet-button:hover {
+		box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15); /*1st 0 sets horizontal position, 2nd one sets down
+		and 3rd sets blur and 4th sets color*/
+	}
