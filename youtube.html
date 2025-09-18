@@ -308,5 +308,25 @@ family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,
         </div>
     </div>
 </div>
+
+<div class="popup-overlay" id="popup">
+  <div class="popup-box">
+    <h2>🎉 Welcome to Amazon Clone</h2>
+    <p>Enjoy shopping! 🚀</p>
+    <button onclick="closePopup()">Close</button>
+  </div>
+</div>
+
+<script>
+  // Show popup on page load
+  window.onload = function() {
+    document.getElementById("popup").classList.add("active");
+  };
+
+  // Close popup
+  function closePopup() {
+    document.getElementById("popup").classList.remove("active");
+  }
+</script>
 </body>
 </html>
